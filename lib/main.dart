@@ -34,11 +34,16 @@ class _listingState extends State<listing> {
         body: Column(
 
      children:quotes.map((q){
-            return Text(q);
+            return Container(
+              color:Colors.orange,
+             padding: EdgeInsets.all(10),
+              child: Text(
+                q
+              ),
+            );
             }).toList(),
         ),
       ),
-
     );
   }
 }
